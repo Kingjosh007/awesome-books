@@ -2,7 +2,7 @@
 
 > "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application through pair-programming, [Sohaib](https://github.com/sohaibya) and I strengthened our knowledge on how to manage data using JavaScript. That means dealing with objects, classes and localStorage. We used a medium-fidelity wireframe to build the UI.
 
-This project was divided into four (4) parts. Refer to the corresponding branch. The one is bold is the one we are working on. 
+This project was divided into four (4) parts. Refer to the corresponding branch. The branch in bold is the one we are working on. 
 
 1. Manage books collection (Plain JS with objects)
 2. Manage books collection (Plain JS with classes)
@@ -11,7 +11,7 @@ This project was divided into four (4) parts. Refer to the corresponding branch.
 
 ## Live Demo
 
-Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/capstone1-summer-music-camp/index.html) 
+Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/awesome-books/) 
 
 ## Getting Started
 
