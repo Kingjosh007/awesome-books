@@ -11,7 +11,7 @@ This project was divided into four (4) parts. Refer to the corresponding branch.
 
 ## Live Demo
 
-Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/capstone1-summer-music-camp/index.html) 
+Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/awesome-books/) 
 
 ## Getting Started
 
