@@ -52,5 +52,7 @@ formEl.addEventListener('submit', (e) => {
   if (title.length > 0 || author.length > 0) {
     const book = { title, author };
     saveBook(book);
+    titleInput.value = '';
+    authorInput.value = '';
   }
 });
