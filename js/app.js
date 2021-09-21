@@ -12,14 +12,14 @@ const codeForBook = (book) => `<div>${book.title}</div>
             <hr>`;
 
 const deleteBook = (id) => {
-      let booksArr = getFromLocalStorage('allBooks') || [];
-      booksArr = booksArr.filter((book) => book.id !== Number(id));
-      saveToLocalStorage('allBooks', booksArr);
-      // eslint-disable-next-line no-use-before-define
-      displayBooks(booksArr);
-}
+  let booksArr = getFromLocalStorage('allBooks') || [];
+  booksArr = booksArr.filter((book) => book.id !== Number(id));
+  saveToLocalStorage('allBooks', booksArr);
+  // eslint-disable-next-line no-use-before-define
+  displayBooks(booksArr);
+};
 const displayBooks = (booksArr) => {
-  let arr = booksArr || getFromLocalStorage('allBooks') || [];
+  const arr = booksArr || getFromLocalStorage('allBooks') || [];
   booksContainer.innerHTML = arr.map((book) => codeForBook(book)).join('');
   const removeButtons = document.querySelectorAll('.removeBtn');
   for (let i = 0; i < removeButtons.length; i += 1) {
