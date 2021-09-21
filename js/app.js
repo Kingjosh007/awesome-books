@@ -11,6 +11,13 @@ const codeForBook = (book) => `<div>${book.title}</div>
             <button data-id='${book.id}' class='removeBtn'>Remove</button>
             <hr>`;
 
+const deleteBook = (id) => {
+      let booksArr = getFromLocalStorage('allBooks') || [];
+      booksArr = booksArr.filter((book) => book.id !== Number(id));
+      saveToLocalStorage('allBooks', booksArr);
+      // eslint-disable-next-line no-use-before-define
+      displayBooks(booksArr);
+}
 const displayBooks = (booksArr) => {
   let arr = booksArr || getFromLocalStorage('allBooks') || [];
   booksContainer.innerHTML = arr.map((book) => codeForBook(book)).join('');
@@ -18,10 +25,7 @@ const displayBooks = (booksArr) => {
   for (let i = 0; i < removeButtons.length; i += 1) {
     removeButtons[i].addEventListener('click', (e) => {
       const idToDelete = e.target.getAttribute('data-id');
-      arr = arr.filter((book) => book.id !== Number(idToDelete));
-      saveToLocalStorage('allBooks', arr);
-      // eslint-disable-next-line no-use-before-define
-      displayBooks(arr);
+      deleteBook(idToDelete);
     });
   }
 };
