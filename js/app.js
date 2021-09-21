@@ -11,25 +11,20 @@ const codeForBook = (book) => `<div>${book.title}</div>
             <button data-id='${book.id}' class='removeBtn'>Remove</button>
             <hr>`;
 
-const deleteBook = (id) => {
-  const booksArr = getFromLocalStorage('allBooks') || [];
-  const booksToSave = booksArr.filter((book) => book.id !== id);
-  saveToLocalStorage('allBooks', booksToSave);
-};
-
 const displayBooks = (booksArr) => {
-  const arr = booksArr || getFromLocalStorage('allBooks') || [];
+  let arr = booksArr || getFromLocalStorage('allBooks') || [];
   booksContainer.innerHTML = arr.map((book) => codeForBook(book)).join('');
-  var removeButtons = document.querySelectorAll('.removeBtn');
+  const removeButtons = document.querySelectorAll('.removeBtn');
   for (let i = 0; i < removeButtons.length; i += 1) {
     removeButtons[i].addEventListener('click', (e) => {
       const idToDelete = e.target.getAttribute('data-id');
-      deleteBook(idToDelete);
+      arr = arr.filter((book) => book.id !== Number(idToDelete));
+      saveToLocalStorage('allBooks', arr);
+      // eslint-disable-next-line no-use-before-define
+      displayBooks(arr);
     });
   }
-
 };
-
 displayBooks();
 
 const saveBook = (book) => {
