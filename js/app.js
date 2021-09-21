@@ -12,27 +12,22 @@ const codeForBook = (book) => `<div>${book.title}</div>
             <hr>`;
 
 const deleteBook = (id) => {
-  let booksArr = getFromLocalStorage('allBooks') || [];
-  booksArr = booksArr.filter((book) => book.id !== id);
-  saveToLocalStorage('allBooks', booksArr);
+  const booksArr = getFromLocalStorage('allBooks') || [];
+  const booksToSave = booksArr.filter((book) => book.id !== id);
+  saveToLocalStorage('allBooks', booksToSave);
 };
 
-const removeBookListener = () => {
-  const removeButtons = document.querySelectorAll('.removeBtn');
+const displayBooks = (booksArr) => {
+  const arr = booksArr || getFromLocalStorage('allBooks') || [];
+  booksContainer.innerHTML = arr.map((book) => codeForBook(book)).join('');
+  var removeButtons = document.querySelectorAll('.removeBtn');
   for (let i = 0; i < removeButtons.length; i += 1) {
     removeButtons[i].addEventListener('click', (e) => {
       const idToDelete = e.target.getAttribute('data-id');
       deleteBook(idToDelete);
-      // eslint-disable-next-line no-use-before-define
-      displayBooks();
     });
   }
-};
 
-const displayBooks = (booksArr) => {
-  const arr = booksArr || getFromLocalStorage('allBooks');
-  booksContainer.innerHTML = arr.map((book) => codeForBook(book)).join('');
-  removeBookListener();
 };
 
 displayBooks();
