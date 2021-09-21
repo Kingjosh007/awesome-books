@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,17 @@
     <title>Awesome Books - Book Management System Using Plain Javascript</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h1>Awesome Books</h1>
+    <div class='booksContainer'></div>
+    <form name="add-book">
+        <input type="text" name="title" placeholder="Title" required> <br><br>
+        <input type="text" name="author" placeholder="Author" required><br><br>
+        <button type="submit"> Add </button>
+    </form>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>

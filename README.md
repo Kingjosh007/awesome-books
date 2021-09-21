@@ -21,7 +21,9 @@ To get a local copy of this project, do the following:
 2. Still in your terminal, type `git clone git@github.com:Kingjosh007/awesome-books.git` 
 3. In your file explorer, open the index.html file inside the `awesome-books` folder.
 
-## Screenshots
+## Screenshot
+
+![Screenshot of milestone 1: Manage books using objects](./screenshots/screenshot1.gif);
 
 ## Built With
 
