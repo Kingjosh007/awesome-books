@@ -1,6 +1,6 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-class Book {
+import { saveToLocalStorage, getFromLocalStorage } from './storage.js';
+
+export default class Book {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;

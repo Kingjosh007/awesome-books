@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+import Book from './Book.js';
 
 const formEl = document.forms['add-book'];
 const titleInput = formEl.title;
