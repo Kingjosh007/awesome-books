@@ -4,8 +4,8 @@
 
 This project was divided into four (4) parts. Refer to the corresponding branch. The branch in bold is the one we are working on. 
 
-1. **Manage books collection (Plain JS with objects)**
-2. Manage books collection (Plain JS with classes)
+1. Manage books collection (Plain JS with objects)
+2. **Manage books collection (Plain JS with classes)**
 3. Style core elements of the page
 4. Complete website with navigation.
 
