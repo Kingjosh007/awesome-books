@@ -59,6 +59,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Heartfelt thanks to [Microverse](https://www.microverse.org/)
+- Hat tip to [Susan Q. Yin](https://unsplash.com/@syinq) whose image was used from Unsplash.
 
 ## 📝 License
 
