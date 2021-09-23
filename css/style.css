@@ -3,3 +3,74 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(238, 211, 188);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.55;
+  z-index: -5;
+}
+
+.overlay img {
+  z-index: 10;
+}
+
+.booksTable {
+  margin: 15px auto;
+  width: 70%;
+  border: black;
+}
+
+.booksTable tbody tr {
+  padding-left: 20px;
+}
+
+.bookTitle {
+  font-family: Yaldevi, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bookAuthor {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgb(54, 41, 29);
+  font-weight: bold;
+}
+
+.removeBtn:hover {
+  background-color: rgb(192, 150, 33);
+}
+
+.separator {
+  width: 15%;
+  height: 4px;
+  background-color: rgb(192, 150, 33);
+  margin: 0 auto;
+  margin-block: 2em;
+}
+
+form {
+  margin-top: 25px;
+}
+
+.input-group {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Yaldevi, sans-serif;
+}

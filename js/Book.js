@@ -10,10 +10,9 @@ export default class Book {
   }
 
   codeForBook() {
-    return `<div>${this.title}</div>
-            <div>${this.author}</div>
-            <button data-id='${this.id}' class='removeBtn'>Remove</button>
-            <hr>`;
+    return `
+          <tr><td class='text-start bookInfo'><span class='bookTitle'>${this.title}</span> by <span class='bookAuthor'>${this.author}</span></td>
+            <td><button type='button' data-id='${this.id}' class='removeBtn btn btn-danger'><i class="fas fa-times-circle"></i> Remove</button></td></tr>`;
   }
 
   static displayBooks(booksArr) {
