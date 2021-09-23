@@ -12,7 +12,7 @@ export default class Book {
   codeForBook() {
     return `
           <tr><td class='text-start bookInfo'><span class='bookTitle'>${this.title}</span> by <span class='bookAuthor'>${this.author}</span></td>
-            <td><button data-id='${this.id}' class='removeBtn'>Remove</button></td></tr>`;
+            <td><button type='button' data-id='${this.id}' class='removeBtn btn btn-warning'>Remove</button></td></tr>`;
   }
 
   static displayBooks(booksArr) {

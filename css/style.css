@@ -48,9 +48,13 @@ body {
   font-weight: bold;
 }
 
+.removeBtn:hover{
+  background-color: rgb(192, 150, 33);
+}
+
 .separator {
   width: 15%;
-  height: 2px;
+  height: 4px;
   background-color: rgb(192, 150, 33);
   margin: 0 auto;
   margin-block: 2em;
