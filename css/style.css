@@ -59,3 +59,8 @@ body {
   margin: 0 auto;
   margin-block: 2em;
 }
+
+.input-group {
+  max-width: 40%;
+  margin: 0 auto;
+}
