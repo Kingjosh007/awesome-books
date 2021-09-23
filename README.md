@@ -23,7 +23,7 @@ To get a local copy of this project, do the following:
 
 ## Screenshot
 
-![Screenshot of milestone 1: Manage books using objects](./screenshots/screenshot1.gif);
+![Screenshot of milestone 1: Manage books using objects](./screenshots/screenshot3.gif);
 
 ## Built With
 
