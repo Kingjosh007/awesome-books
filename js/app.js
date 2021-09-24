@@ -32,7 +32,6 @@ document.querySelector('.navbar-brand').addEventListener('click', () => {
   document.querySelector(`#${allLinks[0]}`).classList.add('onit');
 });
 
-
 const formEl = document.forms['add-book'];
 const titleInput = formEl.title;
 const authorInput = formEl.author;

@@ -43,10 +43,29 @@ body {
   display: none;
 }
 
+footer {
+  background-color: rgb(6, 71, 68);
+  color: #bbb;
+  font-size: 12px;
+  padding: 5px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+footer .fa-heart {
+  color: red;
+}
+
 a {
   color: #eee;
   text-decoration: none;
   font-size: 16px;
+}
+
+footer a {
+  color: rgb(155, 116, 79);
+  font-weight: bold;
+  font-size: 12px;
 }
 
 a:hover {
@@ -125,6 +144,7 @@ input {
 
 main {
   padding-top: 2em;
+  padding-bottom: 3.2em;
 }
 
 .sectionTitle {
@@ -152,7 +172,7 @@ main {
 
 #contact.show .info {
   font-weight: bold;
-  color:rgb(6, 71, 68) !important;
+  color: rgb(6, 71, 68) !important;
 }
 
 #contact.show a {
