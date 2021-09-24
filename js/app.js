@@ -22,6 +22,17 @@ allLinks.forEach((l) => {
   });
 });
 
+document.querySelector('.navbar-brand').addEventListener('click', () => {
+  allSections.forEach((s) => {
+    document.querySelector(`#${s}`).classList.remove('show');
+    document.querySelector(`#${s}`).classList.add('hide');
+  });
+  allLinks.forEach((ll) => document.querySelector(`#${ll}`).classList.remove('onit'));
+  document.querySelector(`#${linkSectionMatch[allLinks[0]]}`).classList.replace('hide', 'show');
+  document.querySelector(`#${allLinks[0]}`).classList.add('onit');
+});
+
+
 const formEl = document.forms['add-book'];
 const titleInput = formEl.title;
 const authorInput = formEl.author;
