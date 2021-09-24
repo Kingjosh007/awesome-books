@@ -6,7 +6,39 @@
 
 body {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 4em;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(6, 71, 68);
+  box-shadow: 0 4px 2px -2px rgb(192, 150, 33);
+  padding-right: 10%;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 1.3em;
+}
+
+.navbar .nav-separator {
+  font-size: 1.5em;
+  margin-top: -5px;
+  color: rgb(192, 150, 33);
+}
+
+.navbar a,
+.navbar a:hover {
+  color: #eee;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: rgb(192, 150, 33);
 }
 
 .overlay {
@@ -17,7 +49,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.55;
+  opacity: 0.45;
   z-index: -5;
 }
 
@@ -28,7 +60,7 @@ body {
 .booksTable {
   margin: 15px auto;
   width: 70%;
-  border: black;
+  border: 2px solid black;
 }
 
 .booksTable tbody tr {
@@ -46,6 +78,10 @@ body {
   font-size: 16px;
   color: rgb(54, 41, 29);
   font-weight: bold;
+}
+
+.removeBtn {
+  font-size: 12px;
 }
 
 .removeBtn:hover {

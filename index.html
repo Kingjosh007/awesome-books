@@ -16,12 +16,38 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand ms-5 h1" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">List</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link nav-separator" href="#">|</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Add new</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link nav-separator" href="#">|</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
     <div class="overlay">
         <img src="images/susan-q-yin-books-unsplash.jpg" alt="Image showing books in shelves in a library">
     </div>
     <h1 class="text-center">All awesome books</h1>
     <div class='booksTableContainer'>
-    <table class="table table-bordered table-striped booksTable table-responsive">
+    <table class="table table-borderless table-striped booksTable table-responsive">
         <thead></thead>
         <tbody class='booksContainer'></tbody>
     </table>
