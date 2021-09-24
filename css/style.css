@@ -10,46 +10,66 @@ body {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: rgb(6, 71, 68);
   box-shadow: 0 4px 2px -2px rgb(192, 150, 33);
-  padding-right: 10%;
+  padding-right: 5%;
+  z-index: 20;
 }
 
 .navbar .navbar-nav {
   display: flex;
-  gap: 1.3em;
+  gap: 0.5em;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.navbar-brand {
+  padding: 10px;
+  background-color:rgb(192, 150, 33);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.navbar-brand .part1 {
+  color:rgb(54, 41, 29);
+}
+
+.navbar-brand .part2 {
+  color:rgb(198, 21, 21);
 }
 
 .navbar .nav-separator {
-  font-size: 1.5em;
-  margin-top: -5px;
-  color: rgb(192, 150, 33);
+  cursor: not-allowed;
+  display: none;
 }
 
-.navbar a,
-.navbar a:hover {
+a {
   color: #eee;
   text-decoration: none;
   font-size: 16px;
 }
 
-.navbar a:hover {
-  color: rgb(192, 150, 33);
+a:hover {
+  color: rgb(192, 150, 33) !important;
+}
+
+.navbar a.onit {
+  color: rgb(192, 150, 33) !important;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: unset;
+  pointer-events: none;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(238, 211, 188);
+  background-color: rgb(16, 53, 9);
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.45;
+  opacity: 0.55;
   z-index: -5;
 }
 
@@ -60,7 +80,7 @@ body {
 .booksTable {
   margin: 15px auto;
   width: 70%;
-  border: 2px solid black;
+  border: 2px solid rgb(6, 71, 68);
 }
 
 .booksTable tbody tr {
@@ -102,3 +122,36 @@ input {
   font-weight: bold;
   font-family: Yaldevi, sans-serif;
 }
+
+main {
+  padding-top: 2em;
+}
+
+.sectionTitle {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .navbar-nav {
+    display: flex;
+    gap: 1.3em;
+  }
+	.navbar .nav-separator { 
+    display: block;
+    font-size: 1.5em;
+    margin-top: -5px;
+    color: rgb(192, 150, 33);
+    cursor: unset;
+    pointer-events: none;
+  }
+}	
