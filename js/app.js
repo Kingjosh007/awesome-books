@@ -1,5 +1,26 @@
 import Book from './Book.js';
 
+const linkSectionMatch = {
+  listLink: 'booksList',
+  addLink: 'addBook',
+  contactLink: 'contact',
+};
+
+const allLinks = Object.keys(linkSectionMatch);
+const allSections = Object.values(linkSectionMatch);
+
+allLinks.forEach((l) => {
+  document.querySelector(`#${l}`).addEventListener('click', () => {
+    allLinks.forEach((ll) => document.querySelector(`#${ll}`).classList.remove('onit'));
+    allSections.forEach((s) => {
+      document.querySelector(`#${s}`).classList.remove('show');
+      document.querySelector(`#${s}`).classList.add('hide');
+    });
+    document.querySelector(`#${linkSectionMatch[l]}`).classList.replace('hide', 'show');
+    document.querySelector(`#${l}`).classList.add('onit');
+  });
+});
+
 const formEl = document.forms['add-book'];
 const titleInput = formEl.title;
 const authorInput = formEl.author;

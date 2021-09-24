@@ -25,17 +25,17 @@ body {
 
 .navbar-brand {
   padding: 10px;
-  background-color:rgb(192, 150, 33);
+  background-color: rgb(192, 150, 33);
   border-radius: 20px;
   font-weight: bold;
 }
 
 .navbar-brand .part1 {
-  color:rgb(54, 41, 29);
+  color: rgb(54, 41, 29);
 }
 
 .navbar-brand .part2 {
-  color:rgb(198, 21, 21);
+  color: rgb(198, 21, 21);
 }
 
 .navbar .nav-separator {
@@ -146,7 +146,8 @@ main {
     display: flex;
     gap: 1.3em;
   }
-	.navbar .nav-separator { 
+
+  .navbar .nav-separator {
     display: block;
     font-size: 1.5em;
     margin-top: -5px;
@@ -154,4 +155,4 @@ main {
     cursor: unset;
     pointer-events: none;
   }
-}	
+}
