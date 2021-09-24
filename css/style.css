@@ -109,12 +109,13 @@ a:hover {
 }
 
 form {
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
+  max-width: 300px;
 }
 
-.input-group {
-  max-width: 40%;
-  margin: 0 auto;
+#addBtn {
+  width: 30%;
+  align-self: flex-end;
 }
 
 input {
@@ -154,5 +155,13 @@ main {
     color: rgb(192, 150, 33);
     cursor: unset;
     pointer-events: none;
+  }
+
+  form {
+    max-width: 40%;
+  }
+
+  #addBtn {
+    width: 100px;
   }
 }

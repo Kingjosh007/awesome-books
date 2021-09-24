@@ -18,6 +18,7 @@ allLinks.forEach((l) => {
     });
     document.querySelector(`#${linkSectionMatch[l]}`).classList.replace('hide', 'show');
     document.querySelector(`#${l}`).classList.add('onit');
+    document.querySelector('.navbar-toggler').click();
   });
 });
 
