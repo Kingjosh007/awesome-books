@@ -45,10 +45,10 @@ body {
 
 #luxon-time {
   text-align: right;
-  margin-right: 15%;
+  margin-right: 5%;
   font-size: 16px;
   font-weight: bold;
-  color:rgb(54, 41, 29) !important;
+  color: rgb(54, 41, 29) !important;
 }
 
 footer {
