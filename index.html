@@ -6,44 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books - Book Management System Using Plain Javascript</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Yaldevi font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+             <a class="navbar-brand" href="#"><span class="part1">Awesome</span><span class="part2">Books</span></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         <div class="collapse navbar-collapse" id="main_nav">
+           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link onit" href="#" id="listLink">List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-separator" href="#">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="addLink">Add new</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-separator" href="#">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="contactLink">Contact</a>
+            </li>
+           </ul>
+         </div> 
+        </div> 
+       </nav>
+       <div id="luxon-time">
+           
+       </div>
     <div class="overlay">
         <img src="images/susan-q-yin-books-unsplash.jpg" alt="Image showing books in shelves in a library">
     </div>
-    <h1 class="text-center">All awesome books</h1>
-    <div class='booksTableContainer'>
-    <table class="table table-bordered table-striped booksTable table-responsive">
-        <thead></thead>
-        <tbody class='booksContainer'></tbody>
-    </table>
-    </div>
-    <div class="separator">
-    </div>
-    <h2>Add a new book</h2>
-    <form name="add-book">
-        <div class="input-group mb-4">
-            <span class="input-group-text" id="addon-book-title"><i class="fas fa-book"></i></span>
-            <input type="text" class="form-control" name="title" placeholder="Title" aria-label="Title" aria-describedby="addon-book-title" required>
+
+    <main>
+        <section id="booksList">
+        <h1 class="sectionTitle">All awesome books</h1>
+        <div class='booksTableContainer'>
+            <table class="table table-borderless table-striped booksTable table-responsive">
+                <thead></thead>
+                <tbody class='booksContainer'></tbody>
+            </table>
         </div>
-        <div class="input-group mb-4">
-            <span class="input-group-text" id="addon-book-author"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control" name="author" placeholder="Author" aria-label="Author" aria-describedby="addon-book-author" required>
-        </div>
-        <button type="submit" class="btn btn-primary"> <i class="fas fa-plus"></i> Add  </button>
-    </form>
+        </section>
+        <section id="addBook" class="hide">
+        <h2 class="sectionTitle">Add a new book</h2>
+        <form name="add-book" class="d-flex flex-column justify-content-end">
+            <div class="input-group mb-4">
+                <span class="input-group-text" id="addon-book-title"><i class="fas fa-book"></i></span>
+                <input type="text" class="form-control" name="title" placeholder="Title" aria-label="Title"
+                    aria-describedby="addon-book-title" required>
+            </div>
+            <div class="input-group mb-4">
+                <span class="input-group-text" id="addon-book-author"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" name="author" placeholder="Author" aria-label="Author"
+                    aria-describedby="addon-book-author" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="addBtn"> <i class="fas fa-plus"></i> Add </button>
+        </form>
+       </section>
+       <section id="contact" class="hide">
+        <h2 class="sectionTitle">Contact information</h2>
+        <p>Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+        <ul>
+            <li>Our email: <a href="mailto:mail@mail.com" target="_blank" rel="noreferrer noopener" class="info">mail@mail.com</a></li>
+            <li>Our phone number: <span class="info" id="tel">0043586534422</span></li>
+            <li>Our address: <span class="info" id="address">Streetname 22, 84503 City, Country</span></li>
+        </ul>
+       </section>
+    </main>
+    <footer class="fixed-bottom" id="myFooter">
+        <div>Made with <span class="heart"><i class="fas fa-heart"></i></span> by <a
+                href="https://kingjosh007.github.io/my-portfolio/" target="_blank"
+                rel="noreferrer noopener">KJC</a> and <a
+                href="https://github.com/sohaibya" target="_blank"
+                rel="noreferrer noopener">Sohaib</a>, copyright © 2021</div>
+        <div>Original design idea by <a href="https://microverse.org" target="_blank"
+                rel="noreferrer noopener">Microverse</a> in <a
+                href="https://github.com/microverseinc/curriculum-javascript/blob/main/books/m4_full_website.md" target="_blank"
+                rel="noreferrer noopener">this repo</a>.</div>
+    </footer>
 
     <script type="module" src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/c397284221.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="js/time.js"></script>
 </body>
 
 </html>

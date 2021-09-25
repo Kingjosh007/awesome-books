@@ -6,14 +6,92 @@
 
 body {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 4.5em;
+}
+
+.navbar {
+  background-color: rgb(6, 71, 68);
+  box-shadow: 0 4px 2px -2px rgb(192, 150, 33);
+  padding-right: 5%;
+  z-index: 20;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 0.5em;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.navbar-brand {
+  padding: 10px;
+  background-color: rgb(192, 150, 33);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.navbar-brand .part1 {
+  color: rgb(54, 41, 29);
+}
+
+.navbar-brand .part2 {
+  color: rgb(198, 21, 21);
+}
+
+.navbar .nav-separator {
+  cursor: not-allowed;
+  display: none;
+}
+
+#luxon-time {
+  text-align: right;
+  margin-right: 5%;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(54, 41, 29) !important;
+}
+
+footer {
+  background-color: rgb(6, 71, 68);
+  color: #bbb;
+  font-size: 12px;
+  padding: 5px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+footer .fa-heart {
+  color: red;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer a {
+  color: rgb(155, 116, 79);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a:hover {
+  color: rgb(192, 150, 33) !important;
+}
+
+.navbar a.onit {
+  color: rgb(192, 150, 33) !important;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: unset;
+  pointer-events: none;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(238, 211, 188);
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +106,7 @@ body {
 .booksTable {
   margin: 15px auto;
   width: 70%;
-  border: black;
+  border: 2px solid rgb(6, 71, 68);
 }
 
 .booksTable tbody tr {
@@ -48,29 +126,96 @@ body {
   font-weight: bold;
 }
 
+.removeBtn {
+  font-size: 12px;
+}
+
 .removeBtn:hover {
   background-color: rgb(192, 150, 33);
 }
 
-.separator {
-  width: 15%;
-  height: 4px;
-  background-color: rgb(192, 150, 33);
-  margin: 0 auto;
-  margin-block: 2em;
-}
-
 form {
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
+  max-width: 300px;
 }
 
-.input-group {
-  max-width: 40%;
-  margin: 0 auto;
+#addBtn {
+  width: 30%;
+  align-self: flex-end;
 }
 
 input {
   font-size: 20px;
   font-weight: bold;
   font-family: Yaldevi, sans-serif;
+}
+
+main {
+  padding-top: 1.7em;
+  padding-bottom: 3.2em;
+}
+
+.sectionTitle {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#contact.show {
+  text-align: justify;
+  font-size: 20px;
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact.show .info {
+  font-weight: bold;
+  color: rgb(6, 71, 68) !important;
+}
+
+#contact.show a {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+#contact.show a:hover {
+  color: rgb(54, 41, 29) !important;
+}
+
+#contact ul {
+  text-align: left;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .navbar-nav {
+    display: flex;
+    gap: 1.3em;
+  }
+
+  .navbar .nav-separator {
+    display: block;
+    font-size: 1.5em;
+    margin-top: -5px;
+    color: rgb(192, 150, 33);
+    cursor: unset;
+    pointer-events: none;
+  }
+
+  form {
+    max-width: 40%;
+  }
+
+  #addBtn {
+    width: 100px;
+  }
 }
