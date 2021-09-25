@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 4.5em;
 }
 
 .navbar {
@@ -41,6 +41,14 @@ body {
 .navbar .nav-separator {
   cursor: not-allowed;
   display: none;
+}
+
+#luxon-time {
+  text-align: right;
+  margin-right: 15%;
+  font-size: 16px;
+  font-weight: bold;
+  color:rgb(54, 41, 29) !important;
 }
 
 footer {
@@ -143,7 +151,7 @@ input {
 }
 
 main {
-  padding-top: 2em;
+  padding-top: 1.7em;
   padding-bottom: 3.2em;
 }
 
