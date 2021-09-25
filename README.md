@@ -25,7 +25,7 @@ To get a local copy of this project, do the following:
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 💻 **Desktop version** 
 
-&nbsp; ![Desktop screenshot gif of milestone 4: Complete website](./screenshots/screenshot4-desktop.gif);
+&nbsp; ![Desktop screenshot gif of milestone 4: Complete website](./screenshots/screenshot4-desktop.gif)
 
 
 &nbsp;
@@ -35,7 +35,7 @@ To get a local copy of this project, do the following:
 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 📱 **Mobile version**
 
 
-&nbsp; ![Mobile screenshot gif of milestone 4: Complete website](./screenshots/screenshot4-mobile.gif);
+&nbsp; ![Mobile screenshot gif of milestone 4: Complete website](./screenshots/screenshot4-mobile.gif)
 
 
 
